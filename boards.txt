@@ -1,0 +1,184 @@
+menu.debug=Build Type
+menu.stdio=Select STDIO Port
+
+# s20gsm board definition
+s20gsm.name=S20 GSM Board
+
+# build
+s20gsm.build.core=siwigsm
+s20gsm.build.cpu=arm9ejs
+s20gsm.build.f_cpu=260000000
+s20gsm.build.board=SIWI_S20GSM
+s20gsm.build.mcu=mt2503
+s20gsm.build.variant=s20u
+s20gsm.build.vid=0x0E8D
+s20gsm.build.pid=0x0003
+s20gsm.build.extra_flags=-DPLATFORM_S20U=1
+s20gsm.build.ldscript=linkerscript.ld
+s20gsm.menu.debug.Release=Release
+s20gsm.menu.debug.Release.build.build_type=
+s20gsm.menu.debug.Debug=Debug
+s20gsm.menu.debug.Debug.build.build_type=_debug
+s20gsm.menu.stdio.none=None
+s20gsm.menu.stdio.none.build.stdio_port=
+s20gsm.menu.stdio.ttys0=Uart0 (/dev/ttyS0)
+s20gsm.menu.stdio.ttys0.build.stdio_port=/dev/ttyS0
+s20gsm.menu.stdio.ttys1=Uart1 (/dev/ttyS1)
+s20gsm.menu.stdio.ttys1.build.stdio_port=/dev/ttyS1
+s20gsm.menu.stdio.ttys2=Uart2 (/dev/ttyS2)
+s20gsm.menu.stdio.ttys2.build.stdio_port=/dev/ttyS2
+s20gsm.menu.stdio.ttyusb=USB Uart (/dev/ttyUSB0)
+s20gsm.menu.stdio.ttyusb.build.stdio_port=/dev/ttyUSB0
+
+# upload
+s20gsm.bootloader.tool=siwiflasher
+s20gsm.upload.tool=siwiflasher
+s20gsm.upload.protocol=siwiflasher
+s20gsm.upload.maximum_size=262144
+s20gsm.upload.maximum_ram_size=96256
+s20gsm.upload.speed=460800
+s20gsm.upload.require_upload_port=true
+s20gsm.upload.wait_for_upload_port=true
+
+# Quectel M66
+quectelm66.name=Quectel M66
+
+# build
+quectelm66.build.core=siwigsm
+quectelm66.build.cpu=arm9ejs
+quectelm66.build.f_cpu=260000000
+quectelm66.build.board=QUECTEL_M66TEA
+quectelm66.build.mcu=mt6261
+quectelm66.build.variant=m66
+quectelm66.build.extra_flags=-DPLATFORM_M66=1
+quectelm66.build.ldscript=linkerscript.ld
+quectelm66.menu.debug.Release=Release
+quectelm66.menu.debug.Release.build.build_type=
+quectelm66.menu.debug.Debug=Debug
+quectelm66.menu.debug.Debug.build.build_type=_debug
+quectelm66.menu.stdio.none=None
+quectelm66.menu.stdio.none.build.stdio_port=
+quectelm66.menu.stdio.ttys0=Uart0 (/dev/ttyS0)
+quectelm66.menu.stdio.ttys0.build.stdio_port=/dev/ttyS0
+quectelm66.menu.stdio.ttys1=Uart1 (/dev/ttyS1)
+quectelm66.menu.stdio.ttys1.build.stdio_port=/dev/ttyS1
+quectelm66.menu.stdio.ttys2=Uart2 (/dev/ttyS2)
+quectelm66.menu.stdio.ttys2.build.stdio_port=/dev/ttyS2
+
+# upload
+quectelm66.bootloader.tool=siwiflasher
+quectelm66.upload.tool=siwiflasher
+quectelm66.upload.protocol=siwiflasher
+quectelm66.upload.maximum_size=262144
+quectelm66.upload.maximum_ram_size=96256
+quectelm66.upload.speed=460800
+quectelm66.upload.require_upload_port=true
+quectelm66.upload.wait_for_upload_port=true
+
+# Quectel MC60
+quectelmc60.name=Quectel MC60
+
+# build
+quectelmc60.build.core=siwigsm
+quectelmc60.build.cpu=arm9ejs
+quectelmc60.build.f_cpu=260000000
+quectelmc60.build.board=QUECTEL_MC60TEA
+quectelmc60.build.mcu=mt2503
+quectelmc60.build.variant=mc60
+quectelmc60.build.extra_flags=-DPLATFORM_MC60=1
+quectelmc60.build.ldscript=linkerscript.ld
+quectelmc60.menu.debug.Release=Release
+quectelmc60.menu.debug.Release.build.build_type=
+quectelmc60.menu.debug.Debug=Debug
+quectelmc60.menu.debug.Debug.build.build_type=_debug
+quectelmc60.menu.stdio.none=None
+quectelmc60.menu.stdio.none.build.stdio_port=
+quectelmc60.menu.stdio.ttys0=Uart0 (/dev/ttyS0)
+quectelmc60.menu.stdio.ttys0.build.stdio_port=/dev/ttyS0
+quectelmc60.menu.stdio.ttys1=Uart1 (/dev/ttyS1)
+quectelmc60.menu.stdio.ttys1.build.stdio_port=/dev/ttyS1
+quectelmc60.menu.stdio.ttys2=Uart2 (/dev/ttyS2)
+quectelmc60.menu.stdio.ttys2.build.stdio_port=/dev/ttyS2
+
+# upload
+quectelmc60.bootloader.tool=siwiflasher
+quectelmc60.upload.tool=siwiflasher
+quectelmc60.upload.protocol=siwiflasher
+quectelmc60.upload.maximum_size=262144
+quectelmc60.upload.maximum_ram_size=96256
+quectelmc60.upload.speed=460800
+quectelmc60.upload.require_upload_port=true
+quectelmc60.upload.wait_for_upload_port=true
+
+# Quectel MC20
+quectelmc20.name=Quectel MC20
+
+# build
+quectelmc20.build.core=siwigsm
+quectelmc20.build.cpu=arm9ejs
+quectelmc20.build.f_cpu=260000000
+quectelmc20.build.board=QUECTEL_MC20TEA
+quectelmc20.build.mcu=mt2503
+quectelmc20.build.variant=mc60
+quectelmc20.build.extra_flags=-DPLATFORM_MC60=1
+quectelmc20.build.ldscript=linkerscript.ld
+quectelmc20.menu.debug.Release=Release
+quectelmc20.menu.debug.Release.build.build_type=
+quectelmc20.menu.debug.Debug=Debug
+quectelmc20.menu.debug.Debug.build.build_type=_debug
+quectelmc20.menu.stdio.none=None
+quectelmc20.menu.stdio.none.build.stdio_port=
+quectelmc20.menu.stdio.ttys0=Uart0 (/dev/ttyS0)
+quectelmc20.menu.stdio.ttys0.build.stdio_port=/dev/ttyS0
+quectelmc20.menu.stdio.ttys1=Uart1 (/dev/ttyS1)
+quectelmc20.menu.stdio.ttys1.build.stdio_port=/dev/ttyS1
+quectelmc20.menu.stdio.ttys2=Uart2 (/dev/ttyS2)
+quectelmc20.menu.stdio.ttys2.build.stdio_port=/dev/ttyS2
+
+# upload
+quectelmc20.bootloader.tool=siwiflasher
+quectelmc20.upload.tool=siwiflasher
+quectelmc20.upload.protocol=siwiflasher
+quectelmc20.upload.maximum_size=262144
+quectelmc20.upload.maximum_ram_size=96256
+quectelmc20.upload.speed=460800
+quectelmc20.upload.require_upload_port=true
+quectelmc20.upload.wait_for_upload_port=true
+
+# Quectel M56
+quectelm56.name=Quectel M56
+
+# build
+quectelm56.build.core=siwigsm
+quectelm56.build.cpu=arm9ejs
+quectelm56.build.f_cpu=260000000
+quectelm56.build.board=QUECTEL_M56TEA
+quectelm56.build.mcu=mt6261
+quectelm56.build.variant=s20u
+quectelm56.build.extra_flags=-DPLATFORM_M56=1
+quectelm56.build.ldscript=linkerscript.ld
+quectelm56.menu.debug.Release=Release
+quectelm56.menu.debug.Release.build.build_type=
+quectelm56.menu.debug.Debug=Debug
+quectelm56.menu.debug.Debug.build.build_type=_debug
+quectelm56.menu.stdio.none=None
+quectelm56.menu.stdio.none.build.stdio_port=
+quectelm56.menu.stdio.ttys0=Uart0 (/dev/ttyS0)
+quectelm56.menu.stdio.ttys0.build.stdio_port=/dev/ttyS0
+quectelm56.menu.stdio.ttys1=Uart1 (/dev/ttyS1)
+quectelm56.menu.stdio.ttys1.build.stdio_port=/dev/ttyS1
+quectelm56.menu.stdio.ttys2=Uart2 (/dev/ttyS2)
+quectelm56.menu.stdio.ttys2.build.stdio_port=/dev/ttyS2
+quectelm56.menu.stdio.ttyusb=USB Uart (/dev/ttyUSB0)
+quectelm56.menu.stdio.ttyusb.build.stdio_port=/dev/ttyUSB0
+
+# upload
+quectelm56.bootloader.tool=siwiflasher
+quectelm56.upload.tool=siwiflasher
+quectelm56.upload.protocol=siwiflasher
+quectelm56.upload.maximum_size=262144
+quectelm56.upload.maximum_ram_size=96256
+quectelm56.upload.speed=460800
+quectelm56.upload.require_upload_port=true
+quectelm56.upload.wait_for_upload_port=true
+
